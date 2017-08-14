@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Underlying Design - Apache Eagle Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../include/images/favicon.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Underlying Design";
+    var mkdocs_page_input_path = "underlying-design.md";
+    var mkdocs_page_url = "/underlying-design/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Apache Eagle Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li><script>
+    function select(elem) {
+        var selectedClassName = "selected";
+        $(".wy-menu-vertical li.selected").removeClass(selectedClassName);
+        $(elem).addClass(selectedClassName);
+    }
+</script>
+
+<!-- 
+    this macro is to fetch the first child element that has url and return the url as the default one of the section
+    arguemnt:
+      ni: nav_item, corresponding to navigation item configured in mkdocs.yml's "pages"
+ -->
+
+
+<!-- 
+    this macro generates the style for indentation on sub tocs in side nav
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- 
+    this macro shows toc items including nested tocs, toc nesting level would depending on arguments described below
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- generate side nav based on navigation configured in mkdocs.yml -->
+
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li><script>
+    function select(elem) {
+        var selectedClassName = "selected";
+        $(".wy-menu-vertical li.selected").removeClass(selectedClassName);
+        $(elem).addClass(selectedClassName);
+    }
+</script>
+
+<!-- 
+    this macro is to fetch the first child element that has url and return the url as the default one of the section
+    arguemnt:
+      ni: nav_item, corresponding to navigation item configured in mkdocs.yml's "pages"
+ -->
+
+
+<!-- 
+    this macro generates the style for indentation on sub tocs in side nav
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- 
+    this macro shows toc items including nested tocs, toc nesting level would depending on arguments described below
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- generate side nav based on navigation configured in mkdocs.yml -->
+
+    <li class="toctree-l1 ">
+        <a class="" href="../getting-started/">Getting Started</a>
+        
+    </li>
+<li>
+          
+            <li><script>
+    function select(elem) {
+        var selectedClassName = "selected";
+        $(".wy-menu-vertical li.selected").removeClass(selectedClassName);
+        $(elem).addClass(selectedClassName);
+    }
+</script>
+
+<!-- 
+    this macro is to fetch the first child element that has url and return the url as the default one of the section
+    arguemnt:
+      ni: nav_item, corresponding to navigation item configured in mkdocs.yml's "pages"
+ -->
+
+
+<!-- 
+    this macro generates the style for indentation on sub tocs in side nav
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- 
+    this macro shows toc items including nested tocs, toc nesting level would depending on arguments described below
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- generate side nav based on navigation configured in mkdocs.yml -->
+
+    <li class="toctree-l1 ">
+        <a class="" href="../using-eagle/">Using Eagle</a>
+        
+    </li>
+<li>
+          
+            <li><script>
+    function select(elem) {
+        var selectedClassName = "selected";
+        $(".wy-menu-vertical li.selected").removeClass(selectedClassName);
+        $(elem).addClass(selectedClassName);
+    }
+</script>
+
+<!-- 
+    this macro is to fetch the first child element that has url and return the url as the default one of the section
+    arguemnt:
+      ni: nav_item, corresponding to navigation item configured in mkdocs.yml's "pages"
+ -->
+
+
+<!-- 
+    this macro generates the style for indentation on sub tocs in side nav
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- 
+    this macro shows toc items including nested tocs, toc nesting level would depending on arguments described below
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- generate side nav based on navigation configured in mkdocs.yml -->
+
+    <li class="toctree-l1 ">
+        <a class="" href="../applications/">Applications</a>
+        
+    </li>
+<li>
+          
+            <li><script>
+    function select(elem) {
+        var selectedClassName = "selected";
+        $(".wy-menu-vertical li.selected").removeClass(selectedClassName);
+        $(elem).addClass(selectedClassName);
+    }
+</script>
+
+<!-- 
+    this macro is to fetch the first child element that has url and return the url as the default one of the section
+    arguemnt:
+      ni: nav_item, corresponding to navigation item configured in mkdocs.yml's "pages"
+ -->
+
+
+<!-- 
+    this macro generates the style for indentation on sub tocs in side nav
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- 
+    this macro shows toc items including nested tocs, toc nesting level would depending on arguments described below
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- generate side nav based on navigation configured in mkdocs.yml -->
+
+    <li class="toctree-l1 ">
+        <a class="" href="../developing-application/">Developing Application</a>
+        
+    </li>
+<li>
+          
+            <li><script>
+    function select(elem) {
+        var selectedClassName = "selected";
+        $(".wy-menu-vertical li.selected").removeClass(selectedClassName);
+        $(elem).addClass(selectedClassName);
+    }
+</script>
+
+<!-- 
+    this macro is to fetch the first child element that has url and return the url as the default one of the section
+    arguemnt:
+      ni: nav_item, corresponding to navigation item configured in mkdocs.yml's "pages"
+ -->
+
+
+<!-- 
+    this macro generates the style for indentation on sub tocs in side nav
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- 
+    this macro shows toc items including nested tocs, toc nesting level would depending on arguments described below
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- generate side nav based on navigation configured in mkdocs.yml -->
+
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Underlying Design</a>
+        
+            <ul>
+            
+                
+    
+        <li class="toctree-l3" onclick="select(this)"><a 
+    
+        
+    
+ href="#alert-engine">Alert Engine</a></li>
+        
+            <ul>
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 4em;"
+    
+ href="#distributed-real-time-streaming">Distributed Real-time Streaming</a></li>
+        
+    
+
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 4em;"
+    
+ href="#declarative-policy-evaluator">Declarative Policy Evaluator</a></li>
+        
+    
+
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 4em;"
+    
+ href="#dynamic-coordinator">Dynamic Coordinator</a></li>
+        
+    
+
+            
+            </ul>
+        
+    
+
+            
+                
+    
+        <li class="toctree-l3" onclick="select(this)"><a 
+    
+        
+    
+ href="#application-framework">Application Framework</a></li>
+        
+            <ul>
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 4em;"
+    
+ href="#application">Application</a></li>
+        
+    
+
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 4em;"
+    
+ href="#application-descriptor">Application Descriptor</a></li>
+        
+    
+
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 4em;"
+    
+ href="#application-provider">Application Provider</a></li>
+        
+    
+
+            
+            </ul>
+        
+    
+
+            
+                
+    
+        <li class="toctree-l3" onclick="select(this)"><a 
+    
+        
+    
+ href="#metric-storage">Metric Storage</a></li>
+        
+            <ul>
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 4em;"
+    
+ href="#persistence-orm-framework">Persistence ORM Framework</a></li>
+        
+    
+
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 4em;"
+    
+ href="#sql-like-rest-query-language">SQL-Like REST Query Language</a></li>
+        
+            <ul>
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 5em;"
+    
+ href="#eagle-query-api">Eagle Query API</a></li>
+        
+            <ul>
+            
+                
+    
+        
+    
+
+            
+                
+    
+        
+    
+
+            
+                
+    
+        
+    
+
+            
+                
+    
+        
+    
+
+            
+                
+    
+        
+    
+
+            
+                
+    
+        
+    
+
+            
+                
+    
+        
+    
+
+            
+                
+    
+        
+    
+
+            
+            </ul>
+        
+    
+
+            
+            </ul>
+        
+    
+
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 4em;"
+    
+ href="#hbase-rowkey-design">HBase Rowkey Design</a></li>
+        
+            <ul>
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 5em;"
+    
+ href="#metric-rowkey-design">Metric Rowkey Design</a></li>
+        
+    
+
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 5em;"
+    
+ href="#entity-rowkey-design">Entity Rowkey Design</a></li>
+        
+            <ul>
+            
+                
+    
+        
+    
+
+            
+            </ul>
+        
+    
+
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 5em;"
+    
+ href="#secondary-index-support">Secondary Index Support</a></li>
+        
+    
+
+            
+                
+    
+        <li class="toctree-l4" onclick="select(this)"><a 
+    
+        
+        style="padding-left: 5em;"
+    
+ href="#native-hbase-coprocessor">Native HBase Coprocessor</a></li>
+        
+    
+
+            
+            </ul>
+        
+    
+
+            
+            </ul>
+        
+    
+
+            
+                
+    
+        <li class="toctree-l3" onclick="select(this)"><a 
+    
+        
+    
+ href="#ui-framework">UI Framework</a></li>
+        
+    
+
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li><script>
+    function select(elem) {
+        var selectedClassName = "selected";
+        $(".wy-menu-vertical li.selected").removeClass(selectedClassName);
+        $(elem).addClass(selectedClassName);
+    }
+</script>
+
+<!-- 
+    this macro is to fetch the first child element that has url and return the url as the default one of the section
+    arguemnt:
+      ni: nav_item, corresponding to navigation item configured in mkdocs.yml's "pages"
+ -->
+
+
+<!-- 
+    this macro generates the style for indentation on sub tocs in side nav
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- 
+    this macro shows toc items including nested tocs, toc nesting level would depending on arguments described below
+    argument:
+      current_level: the level number of current toc item
+      max_level: a number indicating how many toc item levels should show up
+ -->
+
+
+<!-- generate side nav based on navigation configured in mkdocs.yml -->
+
+    <li class="toctree-l1 ">
+        <a class="" href="../reference/">Reference</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Apache Eagle Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Underlying Design</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/apache/eagle/tree/master/docs" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="alert-engine">Alert Engine</h1>
+<h3 id="distributed-real-time-streaming">Distributed Real-time Streaming</h3>
+<p>Eagle Alert Engine is buit on open source realtime streaming infrastrcuture like <a href="http://storm.apache.org/">Apache Storm</a> as default execution engine and <a href="http://kafka.apache.org/">Apache  Kafka</a> as default messagig Bus.</p>
+<p><img alt="Eagle Alert Engine" src="../include/images/alert_engine.png" /></p>
+<h3 id="declarative-policy-evaluator">Declarative Policy Evaluator</h3>
+<p>Eagle supports declarative policy with SQL (CEP) on distributed streaming environment.</p>
+<p><img alt="Eagle Alert Policy Spec" src="../include/images/alert_engine_policy_spec.png" /></p>
+<p>Here are some typical examples:</p>
+<ul>
+<li>
+<p>Example 1: Alert if hadoop namenode capacity usage exceed 90 percentages</p>
+<pre><code>from hadoopJmxMetricEventStream
+[metric == "hadoop.namenode.fsnamesystemstate.capacityused" and value &gt; 0.9] 
+select metric, host, value, timestamp, component, site 
+insert into alertStream;
+</code></pre>
+</li>
+<li>
+<p>Example 2: Alert if hadoop namenode HA switches</p>
+<pre><code>from every 
+a = hadoopJmxMetricEventStream[metric=="hadoop.namenode.fsnamesystem.hastate"] 
+-&gt; 
+b = hadoopJmxMetricEventStream[metric==a.metric and b.host == a.host and a.value != value)] 
+within 10 min 
+select a.host, a.value as oldHaState, b.value as newHaState, b.timestamp as timestamp, b.metric as metric, b.component as component, b.site as site insert into alertStream;
+</code></pre>
+</li>
+</ul>
+<h3 id="dynamic-coordinator">Dynamic Coordinator</h3>
+<p><img alt="Alert Engine Coordination" src="../include/images/alert_engine_coordination.png" /></p>
+<h1 id="application-framework">Application Framework</h1>
+<p>Eagle has multiple distributed real-time frameworks for efficiently developing highly scalable monitoring applications.</p>
+<h2 id="application">Application</h2>
+<p>An "Application" or "App" is composed of data integration, policies and insights for one data source.</p>
+<h2 id="application-descriptor">Application Descriptor</h2>
+<p>An "Application Descriptor" is a static packaged metadata information consist of</p>
+<ul>
+<li><strong>Basic</strong>: type, name, version, description.</li>
+<li><strong>Application</strong>: the application process to run.</li>
+<li><strong>Configuration Descriptor</strong>__:  describe the configurations required by the application when starting like name, displayName, defaultValue Description, required, etc. which will automatically be visualized in configuration editor.</li>
+<li><strong>Streams</strong>: the streams schema the application will export.</li>
+<li><strong>Docs</strong>: application specific documentations which will be embedded in necessary area during the whole lifecyle of application management.</li>
+</ul>
+<p>Here is a ApplicationDesc example of <code>JPM_WEB_APP</code></p>
+<pre><code>    {
+        type: "JPM_WEB_APP",
+        name: "Job Performance Monitoring Web ",
+        version: "0.5.0-incubating",
+        description: null,
+        appClass: "org.apache.eagle.app.StaticApplication",
+        jarPath: "/opt/eagle/0.5.0-incubating-SNAPSHOT-build-20161103T0332/eagle-0.5.0-incubating-SNAPSHOT/lib/eagle-topology-0.5.0-incubating-SNAPSHOT-hadoop-2.4.1-11-assembly.jar",
+        viewPath: "/apps/jpm",
+        providerClass: "org.apache.eagle.app.jpm.JPMWebApplicationProvider",
+        configuration: {
+            properties: [{
+                name: "service.host",
+                displayName: "Eagle Service Host",
+                value: "localhost",
+                description: "Eagle Service Host, default: localhost",
+                required: false
+            }, {
+                name: "service.port",
+                displayName: "Eagle Service Port",
+                value: "8080",
+                description: "Eagle Service Port, default: 8080",
+                required: false
+            }]
+        },
+        streams: null,
+        docs: null,
+        executable: false,
+        dependencies: [{
+            type: "MR_RUNNING_JOB_APP",
+            version: "0.5.0-incubating",
+            required: true
+        }, {
+            type: "MR_HISTORY_JOB_APP",
+            version: "0.5.0-incubating",
+            required: true
+        }]
+    }
+</code></pre>
+<h2 id="application-provider">Application Provider</h2>
+<p>An "application provider" in fact is a package management and loading mechanism leveraging <a href="https://docs.oracle.com/javase/tutorial/ext/basics/spi.html">Java SPI</a>.</p>
+<p>For example, in file </p>
+<pre><code>META-INF/services/org.apache.eagle.app.spi.ApplicationProvider
+</code></pre>
+<p>place the full class name of an application provider:</p>
+<pre><code>org.apache.eagle.app.jpm.JPMWebApplicationProvider
+</code></pre>
+<h1 id="metric-storage">Metric Storage</h1>
+<p><img alt="Eagle Storage Engine" src="../include/images/storage_engine.png" /></p>
+<h2 id="persistence-orm-framework">Persistence ORM Framework</h2>
+<p>Eagle nativelly provides a light-weight ORM Framework for HBase/RDMBS, supporting easily defining persistence data model with java annotation. </p>
+<p>For example as below:</p>
+<pre><code>    @Table("HbaseTableName")
+    @ColumnFamily("ColumnFamily")
+    @Prefix("RowkeyPrefix")
+    @Service("UniqueEntitytServiceName")
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    @TimeSeries(false)
+    @Indexes({
+        @Index(name="Index_1_alertExecutorId", columns = { "alertExecutorID" }, unique = true)})
+    public class AlertDefinitionAPIEntity extends TaggedLogAPIEntity{
+    @Column("a")
+    private String desc;
+</code></pre>
+<h2 id="sql-like-rest-query-language">SQL-Like REST Query Language</h2>
+<p>Eagle provide SQL-Like REST query language on NoSQL Model. For example like</p>
+<pre><code>/rest/entities?query=UniqueEntitytServiceName[@site="sandbox"]{*}
+</code></pre>
+<h3 id="eagle-query-api">Eagle Query API</h3>
+<h4 id="list-query">List Query</h4>
+<pre><code>ListQuery ::= "/" &lt;EntityName&gt; "?" &lt;KeyValue&gt; { "&amp;" &lt;KeyValue&gt; }
+KeyValue ::= [ &lt;Filter&gt; | &lt;Output&gt; ]
+Filter ::= [ &lt;TagFilter&gt; | &lt;FieldFilter&gt; ]
+Output ::= [ &lt;OuputTag&gt; | &lt;OutputField&gt; ]
+TagFilter ::= "tagNameValue" "=" &lt;Condition&gt; &lt;!= while used in URL, the equal "=" character has to be URL encoded with http://www.w3schools.com/tags/ref_urlencode.asp --&gt;
+FieldFilter ::= "fieldNameValue" "=" &lt;Condition&gt; &lt;!-- not implemented yet, field filter has to be pushed down to hbase column filters --&gt;
+Condition ::= &lt;Identifier&gt; &lt;OP&gt; [ &lt;Identifier&gt; | &lt;RegExpression&gt; ]
+OutputTag ::= &lt;Identifier&gt;
+OutputField ::= &lt;Identifier&gt;
+Identifier ::= &lt;Character&gt; { &lt;Identifier&gt; }
+OP ::= [ "=" | "=~" ] &lt;!-- =~ means regular expression matching, not supported yet as of now --&gt;
+RegExpression ::= &lt;!-- java supported regular expressions http://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html , not yet supported in version 0.9 as of now --&gt; 
+EntityName ::= [ "HdfsService" | "HBaseService" | "MRService" | "Host" | "Disk" | "CPU" | "Config" | "Alert" | "Action" | "Event" | "MRJob" | "MRTask" | "HBaseRPC" | "HdfsRPC" ]
+</code></pre>
+<h4 id="aggregation-query">Aggregation Query</h4>
+<pre><code>AggregationQuery ::= "/" &lt;EntityName&gt; "?"  &lt;Filter&gt; { "&amp;" &lt;Filter&gt; } "&amp;" &lt;AggregationField&gt; { "&amp;" &lt;AggregationField&gt; } &lt;AggregationFunction&gt; { "&amp;" &lt;AggregationFunction&gt; } [ "&amp;" &lt;AggregationFilters&gt; ]
+AggregationField ::= "gb" "=" &lt;Identifier&gt; 
+AggregationFunction ::= "function" "=" &lt;Identifier&gt;
+AggregationFilters ::= "having" "=" &lt;BooleanExpression&gt;
+BooleanExpression ::= &lt;!-- as of now, boolean expression has not been yet implemented --&gt;
+</code></pre>
+<h4 id="bucket-query">Bucket Query</h4>
+<pre><code>BucketQuery ::= "/" &lt;EntityName&gt; "?" &lt;Filter&gt; { "&amp;" &lt;Filter&gt; } "&amp;" &lt;BucketField&gt; { "&amp;" &lt;BucketField&gt; } &lt;BucketLimit&gt; { "&amp;" &lt;BucketLimit&gt; }
+BucketField ::= "BucketField" "=" &lt;Identifier&gt;
+BucketLimit ::= &lt;Number&gt;
+</code></pre>
+<h4 id="rowkey-query">Rowkey Query</h4>
+<pre><code>RowkeyQuery ::= "/" &lt;RowkeyPath&gt; "?" &lt;KeyFilter&gt; "&amp;' &lt;TableFilter&gt; "&amp;" &lt;ColumnFamilyFilter&gt; "&amp;" [ "all=true" | &lt;FieldSelection&gt; ]
+RowkeyPath ::= "rowkey"
+KeyFilter ::= "key" "=" &lt;Identifier&gt; 
+TableFilter ::= "table" "=" &lt;Identifier&gt;
+ColumnFamilyFilter ::= "cf" "=" &lt;Identifier&gt;
+FieldSelection ::= &lt;Field&gt; { &lt;FieldSelection&gt; }
+Field ::= "Field" "=" &lt;Identifier&gt;
+</code></pre>
+<h4 id="pagination">Pagination</h4>
+<pre><code>Pagination ::= &lt;CollectionQuery&gt; "&amp;" &lt;PageSize&gt; "&amp;" &lt;StartRowkey&gt;
+PageSize ::= "pageSize" "=" &lt;Number&gt;
+StartRowkey ::= "startRowkey" "=" &lt;Identifier&gt;  &lt;!-- client application should set the rowkey where the query will start with. rowkey should be null if the query starts from the beginning --&gt;
+</code></pre>
+<h4 id="sorting">Sorting</h4>
+<pre><code>Sort ::= [ &lt;AggregationQuery&gt; | &lt;CollectionQuery&gt; ] "&amp;" &lt;SortSpecs&gt;
+SortSpecs ::= &lt;SortSpec&gt; "&amp;" { &lt;SortSpecs&gt; }
+SortSpec ::= "st" "=" &lt;SortField&gt; = &lt;SortOrder&gt;
+SortField ::= &lt;Identifier&gt;
+SortOrder ::= [ asc | desc ]
+</code></pre>
+<h4 id="union">Union</h4>
+<pre><code>UnionQuery ::= &lt;Query&gt; { "+" &lt;Query&gt; }  &lt;!-- as of now this syntax is not yet implemented, but union is used by letting service knowing it's a union --&gt;
+Query ::= [ &lt;CollectionQuery&gt; | &lt;AggregationQuery&gt; | &lt;BucketQuery&gt; ]
+</code></pre>
+<h4 id="join">Join</h4>
+<pre><code>JoinQuery ::= &lt;Query&gt; { "^" &lt;Query&gt; } &lt;!-- as of now this syntax is not yet implemented, but union is used by letting service knowing it's a join --&gt;
+</code></pre>
+<h2 id="hbase-rowkey-design">HBase Rowkey Design</h2>
+<p>Optimized Rowkey design for time-series data, optimized for metric/entity/log, etc. different storage types</p>
+<pre><code>Rowkey ::= Prefix | Partition Keys | timestamp | tagName | tagValue | …
+</code></pre>
+<h4 id="metric-rowkey-design">Metric Rowkey Design</h4>
+<pre><code>Rowkey ::= Metric Name | Partition Keys | timestamp | tagName | tagValue | …
+</code></pre>
+<h4 id="entity-rowkey-design">Entity Rowkey Design</h4>
+<pre><code>Rowkey ::= Default Prefix | Partition Keys | timestamp | tagName | tagValue | …
+</code></pre>
+<h5 id="log-rowkey-design">Log Rowkey Design</h5>
+<pre><code>Rowkey ::= Log Type | Partition Keys | timestamp | tagName | tagValue | …
+Rowvalue ::= Log Content
+</code></pre>
+<h3 id="secondary-index-support">Secondary Index Support</h3>
+<p Index(name="INDEX_NAME", columns =" { &quot;SECONDARY_INDEX_COLUMN_NAME&quot; ">Eagle supports to define secondary index with annotation with <code>@Index</code>. For example:
+        @Indexes(, unique = true/false)})</p>
+<h3 id="native-hbase-coprocessor">Native HBase Coprocessor</h3>
+<pre><code>    org.apache.eagle.storage.hbase.query.coprocessor.AggregateProtocolEndPoint
+</code></pre>
+<h1 id="ui-framework">UI Framework</h1>
+<p>Eagle UI is mainly consist of following parts:</p>
+<ul>
+<li>Eagle Main UI</li>
+<li>Eagle App Portal/Dashboard/Widgets</li>
+<li>Eagle Customized Dashboard</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../reference/" class="btn btn-neutral float-right" title="Reference">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../developing-application/" class="btn btn-neutral" title="Developing Application"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/apache/eagle/tree/master/docs" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../developing-application/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../reference/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

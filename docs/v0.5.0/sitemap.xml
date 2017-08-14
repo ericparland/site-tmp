@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://eagle.apache.org/</loc>
+     <lastmod>2017-04-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://eagle.apache.org/getting-started/</loc>
+     <lastmod>2017-04-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://eagle.apache.org/using-eagle/</loc>
+     <lastmod>2017-04-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://eagle.apache.org/applications/</loc>
+     <lastmod>2017-04-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://eagle.apache.org/developing-application/</loc>
+     <lastmod>2017-04-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://eagle.apache.org/underlying-design/</loc>
+     <lastmod>2017-04-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://eagle.apache.org/reference/</loc>
+     <lastmod>2017-04-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+</urlset>
